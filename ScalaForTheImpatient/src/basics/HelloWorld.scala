@@ -25,11 +25,12 @@ object HelloWorld {
   }
 }
 /*
- * Findings methods are declared using def
+ * Findings 
+ * methods are declared using def
  * void is Unit in Scala
  * A value declared as val can never be changed
  * A value declared with var can be changed
- * the types of the variable are decalred after the name of the variable
+ * the types of the variable are declared after the name of the variable
  * the return type is written after the parameters of the method
  * See the method declaration for clarity
  */
