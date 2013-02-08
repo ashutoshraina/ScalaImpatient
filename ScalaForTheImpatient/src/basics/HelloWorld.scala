@@ -3,7 +3,19 @@ package basics
 object HelloWorld {
 
   def main(args: Array[String]): Unit = {
-    StringOperations("HelloWorld")
+    
+   // val result = ControlStructures.FindFirstMultiple(List.range(1, 50, 1))
+    //println (result)
+    
+   // val allMultiples = ControlStructures.FindAllMultiples(List.range(1,100,1))
+   // for(t <- allMultiples)
+   // println(t)
+    
+   // ControlStructures.ReversePrint(10)
+    
+    println(ControlStructures.ComputePower(3,4))
+    
+    //StringOperations("HelloWorld")
   }
 
   private def StringOperations(arg: String): Unit = {
