@@ -10,11 +10,24 @@ object HelloWorld {
    // val allMultiples = ControlStructures.FindAllMultiples(List.range(1,100,1))
    // for(t <- allMultiples)
    // println(t)
-    
+ 
    // ControlStructures.ReversePrint(10)
     
-    println(ControlStructures.ComputePower(3,4))
+    //println(ControlStructures.ComputePower(3,4))
     
+    //val swappedArray =  ArrayOperations.SwapAdjacent(Array(1,2,3,4,5,6))
+    //swappedArray.foreach(r => println(r))
+    
+    var swappedArray = ArrayOperations.SwapAdjacentAndCreateNewArrayTheFunctionalWay(Array(1,2,3,4,5,6))
+    swappedArray.foreach(r => print(r + "\t"))
+    println()
+    println(swappedArray.getClass());
+    swappedArray = ArrayOperations.SwapAdjacentAndCreateNewArrayTheFunctionalWay(Array(1,2,3,4,5))
+    swappedArray.foreach(r => print(r + "\t"))
+    
+    println()
+    val temp = ArrayOperations.SwapAdjacentAndCreateNewArray2(Array(1,2,3,4,5))
+    temp.foreach(f => print(f))
     //StringOperations("HelloWorld")
   }
 
@@ -36,13 +49,3 @@ object HelloWorld {
     println();
   }
 }
-/*
- * Findings 
- * methods are declared using def
- * void is Unit in Scala
- * A value declared as val can never be changed
- * A value declared with var can be changed
- * the types of the variable are declared after the name of the variable
- * the return type is written after the parameters of the method
- * See the method declaration for clarity
- */
