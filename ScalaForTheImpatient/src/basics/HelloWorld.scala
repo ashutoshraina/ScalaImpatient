@@ -1,5 +1,7 @@
 package basics
 
+import scala.collection.mutable.ArrayBuffer
+
 object HelloWorld {
 
   def main(args: Array[String]): Unit = {
@@ -18,16 +20,21 @@ object HelloWorld {
     //val swappedArray =  ArrayOperations.SwapAdjacent(Array(1,2,3,4,5,6))
     //swappedArray.foreach(r => println(r))
     
-    var swappedArray = ArrayOperations.SwapAdjacentAndCreateNewArrayTheFunctionalWay(Array(1,2,3,4,5,6))
-    swappedArray.foreach(r => print(r + "\t"))
-    println()
-    println(swappedArray.getClass());
-    swappedArray = ArrayOperations.SwapAdjacentAndCreateNewArrayTheFunctionalWay(Array(1,2,3,4,5))
-    swappedArray.foreach(r => print(r + "\t"))
+    //var swappedArray = ArrayOperations.SwapAdjacentAndCreateNewArrayTheFunctionalWay(Array(1,2,3,4,5,6))
+    //swappedArray.foreach(r => print(r + "\t"))
+   // println()
+    //println(swappedArray.getClass());
+    //swappedArray = ArrayOperations.SwapAdjacentAndCreateNewArrayTheFunctionalWay(Array(1,2,3,4,5))
+    //swappedArray.foreach(r => print(r + "\t"))
     
-    println()
-    val temp = ArrayOperations.SwapAdjacentAndCreateNewArray2(Array(1,2,3,4,5))
-    temp.foreach(f => print(f))
+    //val average = ArrayOperations.AverageForAnArrayOfDouble(Array(1.3,4.5,6.7,8.9))
+    //println(average)
+
+    //val reverseSort = ArrayOperations.ReverseSortArrayOfIntegers(Array(3,7,8,1,9))
+    //reverseSort.foreach(r => println(r))
+     
+    val reverseSortArrayBuffer = ArrayOperations.ReverseSortArrayBuffer(ArrayBuffer[Int](3,7,8,1,9))
+    reverseSortArrayBuffer.foreach(r => println(r))
     //StringOperations("HelloWorld")
   }
 
