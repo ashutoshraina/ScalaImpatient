@@ -9,7 +9,7 @@ object ArrayOperations{
 	//Write a method which swaps the adjacent elements in an array
 
    //solution 1
-	def SwapAdjacent(input: Array[Int]) = {
+	def swapAdjacent(input: Array[Int]) = {
 
 		for( i <- 0 until (input.length - 1,2)){
 		    val temp = input(i)
@@ -20,7 +20,7 @@ object ArrayOperations{
 	}
 
 	//solution 2
-	def SwapAdjacentAndCreateNewArray(input: Array[Int]) = {
+	def swapAdjacentAndCreateNewArray(input: Array[Int]) = {
 
 		for( i <- 0 until (input.length))
 		  yield{
@@ -36,7 +36,8 @@ object ArrayOperations{
 	
 	//solution 3
 	
-	def SwapAdjacentAndCreateNewArrayTheFunctionalWay(input: Array[Int]) = {
+	def swapAdjacentAndCreateNewArrayTheFunctionalWay(input: Array[Int]) = {
+	  
 			input.grouped(2).flatMap(_.reverse).toArray
 	}	
 
@@ -45,7 +46,8 @@ object ArrayOperations{
 	
 	//compute the average of an Array[Double]
 
-	def AverageForAnArrayOfDouble(input: Array[Double]) = {
+	def averageForAnArrayOfDouble(input: Array[Double]) = {
+	  
 		var result : Double = 0
 	    input.foreach(r => result += r)
 	    result/input.length
@@ -53,14 +55,22 @@ object ArrayOperations{
 	
 	//Reverse sort Array[Int] and ArrayBuffer[Int]
 	
-	def ReverseSortArrayOfIntegers(input: Array[Int]) = {
-	  Sorting.quickSort(input);
+	def reverseSortArrayOfIntegers(input: Array[Int]) = {
+	  
+	  Sorting.quickSort(input)
 	  input.reverse
+	  
 	}
 	
-	def ReverseSortArrayBuffer(input: ArrayBuffer[Int]) = {
+	def reverseSortArrayBuffer(input: ArrayBuffer[Int]) = {
+	  
 	  input.sortWith(_.longValue > _.longValue)
 	}
 	
 	//Produce all values from an array with duplicates removed	
+	
+	def removeDuplicates(input : Array[Int]) = {
+	  
+	  input.distinct.foreach(println)
+	}
 }
