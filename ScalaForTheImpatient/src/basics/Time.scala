@@ -1,6 +1,6 @@
 package basics
 
-class Time (val hr : Int , val min : Int){
+class Time (hr : Int , min : Int){
   
    def hour = hr
    def minute = min
