@@ -1,6 +1,8 @@
 package basics
 
-//manufacturer , modelName and modelYear are read-only properties in Scala
+//manufacturer , modelName and modelYear are read-only properties 
+//licensePlate is a read-write property
+
 class Car {
   
   private var _manufacturer : String = ""

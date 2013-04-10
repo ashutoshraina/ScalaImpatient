@@ -1,21 +1,18 @@
 package tests
 
 import org.scalatest.junit.JUnitSuite
-import org.scalatest.junit.ShouldMatchersForJUnit
 import org.junit.Test
-import org.junit.Before
-import org.scalatest.prop.Checkers
 import org.scalatest.Assertions
 import basics.Time
 
-class TimeTest extends JUnitSuite with ShouldMatchersForJUnit{
+class TimeTest extends JUnitSuite {
 
   @Test
   def checkIfTimeCanBeInitialisedByPassingHoursAndMinutes = {
     
     val time = new Time(12,56)
-    Assertions.assert(time.hour == 12)
-    Assertions.assert(time.minute == 56)
+    assert(time.hour == 12)
+    assert(time.minute == 56)
   }
   
   @Test
@@ -23,7 +20,7 @@ class TimeTest extends JUnitSuite with ShouldMatchersForJUnit{
     
     val first = new Time(12,56)
     val other = new Time(11,59)    
-    Assertions.assert(first.before(other))
+    assert(first.before(other))
   }
   
    @Test
@@ -31,6 +28,6 @@ class TimeTest extends JUnitSuite with ShouldMatchersForJUnit{
      
     val first = new Time(9,56)
     val second = new Time(11,59)
-    Assertions.assert(!first.before(second))
+    assert(!first.before(second))
   }
 }
