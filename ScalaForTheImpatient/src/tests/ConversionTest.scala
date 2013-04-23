@@ -26,6 +26,7 @@ class ConversionTest extends JUnitSuite with ShouldMatchers {
     assert(Conversion.milesToKilometers(10) == 16.1)
   }
   
+  //This is a way of testing for exceptions
   @Test
   def negativeInchesShouldThrowException() = {
    
@@ -35,4 +36,12 @@ class ConversionTest extends JUnitSuite with ShouldMatchers {
     assert(thrown.getMessage == "inches can't be negative")
   }
   
+  //This is another way of testing for exceptions, 
+  //this seems a little easier to write but tougher to make sense of.
+  
+  @Test(  expected = classOf[Exception] )
+	def negativeGallonsShouldThrowException()
+	{
+		Conversion.gallonsToLiters(-1)
+	}
 }

@@ -7,4 +7,10 @@ class Person(val fullName : String){
   
   def firstName = _firstName
   def secondName = _secondName
+  
+  def printName = {
+    
+    println(firstName + " " + secondName)
+  
+  }
 }
