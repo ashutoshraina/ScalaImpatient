@@ -9,7 +9,7 @@ class Point private (val x : Int , val y : Int){
 	private var _y = y
 
 	def printCoordinates() = {
-	  println ("X : " + _x + "Y : " + _y)
+	  println ("X : " + _x + " Y : " + _y)
 	}
 }
 
