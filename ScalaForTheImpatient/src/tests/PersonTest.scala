@@ -9,11 +9,11 @@ import basics.Person
 
 class PersonTest extends JUnitSuite {
 
-  @Test
-  def personCanBeInitialisedWithAPrimaryConstructor = {
-   
-   val person = new Person("Ashutosh Raina")
-   assert (person.firstName.equalsIgnoreCase("Ashutosh"))
-   assert (person.secondName.equalsIgnoreCase("Raina"))
-  }
+	@Test
+	def personCanBeInitialisedWithAPrimaryConstructor = {
+
+		val person = new Person( "Ashutosh Raina" )
+		assert ( person.firstName.equalsIgnoreCase( "Ashutosh" ) )
+		assert ( person.secondName.equalsIgnoreCase( "Raina" ) )
+	}
 }
