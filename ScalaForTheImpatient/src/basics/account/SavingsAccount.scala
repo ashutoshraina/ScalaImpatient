@@ -1,4 +1,5 @@
-package basics
+package basics.account
+
 
 //Extend the Account class to create a SavingsAccount class that earns interest 
 // every month when earnMonthlyInterest is called , has 3 free deposits or withdrawls

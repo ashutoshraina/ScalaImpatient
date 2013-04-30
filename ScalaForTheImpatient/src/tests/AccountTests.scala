@@ -5,6 +5,8 @@ import org.junit.Test
 import org.scalatest.Assertions
 import basics._
 import org.scalatest.matchers.ShouldMatchers
+import basics.account.CheckingAccount
+import basics.account.SavingsAccount
 
 class AccountTests extends JUnitSuite with ShouldMatchers {
 

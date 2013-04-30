@@ -1,4 +1,5 @@
 package basics
+import basics.shapes._
 
 //Turns out an Object can extend App and then there is no need for a mains method
 object Start extends App {

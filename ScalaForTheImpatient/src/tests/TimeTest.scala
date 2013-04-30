@@ -3,7 +3,7 @@ package tests
 import org.scalatest.junit.JUnitSuite
 import org.junit.Test
 import org.scalatest.Assertions
-import basics.Time
+import basics.operations.Time
 
 class TimeTest extends JUnitSuite {
 

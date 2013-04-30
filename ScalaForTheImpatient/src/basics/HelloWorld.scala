@@ -1,6 +1,9 @@
 package basics
 
 import scala.collection.mutable.ArrayBuffer
+import basics.operations.ArrayOperations
+import basics.operations.ControlStructures
+import basics.operations.MapOperations
 
 object HelloWorld {
 

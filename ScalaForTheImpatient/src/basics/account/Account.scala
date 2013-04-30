@@ -1,4 +1,4 @@
-package basics
+package basics.account
 
 class Account( initialBalance : Double ) {
 

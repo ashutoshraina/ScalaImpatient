@@ -1,7 +1,6 @@
-package basics
+package basics.operations
 
 import util.Sorting
-import scala.collection
 import scala.collection.mutable.ArrayBuffer
 
 object ArrayOperations {

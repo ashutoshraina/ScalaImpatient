@@ -1,4 +1,5 @@
-package basics
+package basics.account
+
 
 // Extend the Account class to CheckingAccount that charges an 
 // extra dollar for every deposit and withdrawal

@@ -1,4 +1,4 @@
-package basics
+package basics.operations
 
 class Time( hr : Int, min : Int ) {
 

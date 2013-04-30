@@ -1,4 +1,4 @@
-package basics
+package basics.shapes
 
 // Define a Point Class with a companion object so that you can construct Point 
 // instances as Point(3,4)
