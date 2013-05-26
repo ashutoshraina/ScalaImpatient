@@ -14,5 +14,10 @@ object Start extends App {
 
 	Random.setSeed( 3 )
 	println( Random.nextInt )
+	
+	val labeledPoint = new LabeledPoint("AwesomePoint",10,20)
+	
+	labeledPoint.printCoordinates
+	labeledPoint.printPoint
 
 }
