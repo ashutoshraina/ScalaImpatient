@@ -148,4 +148,4 @@ syntaxColouring.xml.tagName.underline=false
 target=jvm-1.7
 unchecked=false
 verbose=false
-withVersionClasspathValidator=false
+withVersionClasspathValidator=true
