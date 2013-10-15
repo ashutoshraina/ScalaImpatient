@@ -1,7 +1,7 @@
 //Create a package random with functions nexctInt(): Int , nextDouble() : Double and setSeed(seed : Int) : unit 
 //To generate random numbers, use the linear congruential generator
 
-package object Random {
+package object random {
 
 	private var previousInt : Int = 0
 	private var previousDouble : Double = 0

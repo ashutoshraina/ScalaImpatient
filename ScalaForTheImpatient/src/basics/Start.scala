@@ -11,9 +11,6 @@ object Start extends App {
 		println ( "You did supply me with some arguments. I am not interestd in processing hem right now." )
 
 	Point( 3, 4 ).printCoordinates()
-
-	Random.setSeed( 3 )
-	println( Random.nextInt )
 	
 	val labeledPoint = new LabeledPoint("AwesomePoint",10,20)
 	
