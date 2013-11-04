@@ -36,22 +36,22 @@ object playground {;import org.scalaide.worksheet.runtime.library.WorksheetSuppo
 	def corresponds( c : Iterable[ String ], m : Map[ String, Int ] ) = {
 		c.flatMap( ( k ) => m.get( k ) )
 
-	};System.out.println("""corresponds: (c: Iterable[String], m: Map[String,Int])Iterable[Int]""");$skip(109); val res$1 = 
+	};System.out.println("""corresponds: (c: Iterable[String], m: Map[String,Int])Iterable[Int]""");$skip(109); 
 	println( corresponds(
 		Array( "Tom", "Fred", "Harry" ),
-		Map( "Tom" -> 3, "Dick" -> 4, "Harry" -> 5 ) ) );System.out.println("""res1: <error> = """ + $show(res$1));$skip(90); 
+		Map( "Tom" -> 3, "Dick" -> 4, "Harry" -> 5 ) ) );$skip(90); 
 
-	def groupByColumn( input : Iterable[ Int ], columns : Int ) = input.grouped( columns );System.out.println("""groupByColumn: (input: Iterable[Int], columns: Int)Iterator[Iterable[Int]]""");$skip(71); val res$2 = 
+	def groupByColumn( input : Iterable[ Int ], columns : Int ) = input.grouped( columns );System.out.println("""groupByColumn: (input: Iterable[Int], columns: Int)Iterator[Iterable[Int]]""");$skip(71); 
 
-	groupByColumn( Array( 1, 2, 3, 4, 4, 6, 7 ), 3 ).foreach( println );System.out.println("""res2: <error> = """ + $show(res$2));$skip(112); 
+	groupByColumn( Array( 1, 2, 3, 4, 4, 6, 7 ), 3 ).foreach( println );$skip(112); 
 	def makeString[ T ]( c : Iterable[ T ], s : String = "" ) = {
 		c.map( _.toString ).reduceLeft( _ + s + _ )
-	};System.out.println("""makeString: [T](c: Iterable[T], s: String)String""");$skip(50); val res$3 = 
-	println( makeString( Array( 1, 2, 3, 4 ), "" ) );System.out.println("""res3: <error> = """ + $show(res$3));$skip(32); val res$4 = 
+	};System.out.println("""makeString: [T](c: Iterable[T], s: String)String""");$skip(50); 
+	println( makeString( Array( 1, 2, 3, 4 ), "" ) );$skip(32); val res$1 = 
 
-	Array( 1, 2, 3, 4 ).mkString;System.out.println("""res4: <error> = """ + $show(res$4));$skip(26); 
-	
-	val list = List(1,2,3);System.out.println("""list  : List[Int] = """ + $show(list ));$skip(31); 
-val list2 = list.updated(0, 5);System.out.println("""list2  : List[Int] = """ + $show(list2 ))}
+	Array( 1, 2, 3, 4 ).mkString;System.out.println("""res1: String = """ + $show(res$1));$skip(30); 
+
+	val list = List( 1, 2, 3 );System.out.println("""list  : List[Int] = """ + $show(list ));$skip(34); 
+	val list2 = list.updated( 0, 5 );System.out.println("""list2  : List[Int] = """ + $show(list2 ))}
 
 }

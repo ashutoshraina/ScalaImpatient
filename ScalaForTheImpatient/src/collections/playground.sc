@@ -46,7 +46,6 @@ object playground {
 		Array( "Tom", "Fred", "Harry" ),
 		Map( "Tom" -> 3, "Dick" -> 4, "Harry" -> 5 ) ) )
                                                   //> ArrayBuffer(3, 5)
-                                                  //| res1: <error> = ()
 
 	def groupByColumn( input : Iterable[ Int ], columns : Int ) = input.grouped( columns )
                                                   //> groupByColumn: (input: Iterable[Int], columns: Int)Iterator[Iterable[Int]]
@@ -56,17 +55,15 @@ object playground {
                                                   //> WrappedArray(1, 2, 3)
                                                   //| WrappedArray(4, 4, 6)
                                                   //| WrappedArray(7)
-                                                  //| res2: <error> = ()
 	def makeString[ T ]( c : Iterable[ T ], s : String = "" ) = {
 		c.map( _.toString ).reduceLeft( _ + s + _ )
 	}                                         //> makeString: [T](c: Iterable[T], s: String)String
 	println( makeString( Array( 1, 2, 3, 4 ), "" ) )
                                                   //> 1234
-                                                  //| res3: <error> = ()
 
-	Array( 1, 2, 3, 4 ).mkString              //> res4: <error> = 1234
-	
-	val list = List(1,2,3)                    //> list  : List[Int] = List(1, 2, 3)
-val list2 = list.updated(0, 5)                    //> list2  : List[Int] = List(5, 2, 3)
+	Array( 1, 2, 3, 4 ).mkString              //> res1: String = 1234
+
+	val list = List( 1, 2, 3 )                //> list  : List[Int] = List(1, 2, 3)
+	val list2 = list.updated( 0, 5 )          //> list2  : List[Int] = List(5, 2, 3)
 
 }
