@@ -13,14 +13,14 @@ class AccountTests extends JUnitSuite with ShouldMatchers {
 	@Test
 	def currentAccountShouldDeductADollarWhenMakingADeposit = {
 
-		val account = new CheckingAccount( 1000 );
+		val account = new CheckingAccount( 1000 )
 		assert( account.deposit( 100 ) == 1099 )
 	}
 
 	@Test
 	def currentAccountShouldDeductADollarWhenMakingAWithdrawal = {
 
-		val account = new CheckingAccount( 1000 );
+		val account = new CheckingAccount( 1000 )
 		assert( account.withdraw( 100 ) == 899 )
 	}
 
